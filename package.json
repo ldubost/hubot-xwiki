@@ -27,7 +27,7 @@
   "devDependencies": {
   },
 
-  "main": "xwiki.coffee",
+  "main": "index.coffee",
 
   "scripts": {
   }
