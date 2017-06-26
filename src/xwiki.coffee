@@ -49,12 +49,10 @@ module.exports = (robot) ->
        visibility : "public"
 
      robot.adapter.client.createRoom options, (err, data) =>
-       robot.logger.error data
        res.send data
 
 
   robot.error (err, res) ->
-    robot.logger.error "DOES NOT COMPUTE"
 
     if res?
      res.reply "DOES NOT COMPUTE"
