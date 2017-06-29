@@ -41,6 +41,14 @@ module.exports = (robot) ->
 
      res.send 'OK'
 
+  robot.router.get '/xwiki/test/:room', (req, res) ->
+     room   = req.params.room
+     msg = "Test message"
+
+     robot.messageRoom room, msg
+
+     res.send 'OK'
+
   robot.router.post '/xwiki/newchat/', (req, res) ->
      data   = if req.body.payload? then JSON.parse req.body.payload else req.body
      roomName = data.roomName
