@@ -4,7 +4,8 @@
 #   This script allows interaction with XWiki.
 #   The bot commands are
 #
-#   xwiki search [solr search terms]
+# Commands:
+#   hubot xsearch <solr search terms>
 #
 #   Also XWiki can send callbacks to Hubot to send notifications to the proper channels
 #   In XWiki you indicate a channel for a sub-wiki, a space or a page and notifications will be sent to the channel
